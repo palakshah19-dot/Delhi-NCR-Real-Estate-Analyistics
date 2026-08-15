@@ -58,7 +58,7 @@ sns.scatterplot(data=df, x='area', y='price')
 plt.title('Area vs Price')
 plt.xlabel('Area (sqft)')
 plt.ylabel('Price (in crores)')
-# plt.show()
+plt.show()
 
 # 7.Which BHK configuration is the most expensive based pn per square foot rate?
 bhk_avg_rate = df.groupby('bhk_count')['rate_per_sqft'].mean().sort_values(ascending=False).head(1)
